@@ -1,0 +1,96 @@
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid;  
+  overflow: hidden;
+  background-color: cyan;
+}
+.Earth {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 100%;
+  position: absolute;
+  top: 60%;
+  left: 0px;
+  background-size: 100%;
+  background: url('http://fc08.deviantart.net/fs71/i/2010/266/b/e/strange_planet_png_by_ravenmaddartwork-d2zau51.png') repeat;
+ background-size: 100%;
+ animation: BobGoRound 1s linear infinite;
+}
+
+@keyframes BobGoRound {
+  100% {
+    transform :rotate(360deg) ;
+  }
+}
+
+.bird {
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  width: 96px;
+  height: 64px;
+  margin-top: -20px;
+  margin-left: -20px;
+  animation: KAKAW 0.8s linear infinite;
+  overflow: hidden
+}
+
+.graphic {
+  background: url('http://i444.photobucket.com/albums/qq168/grandmadeb_rmvx/Dragoncrnagomi.png');
+  margin-top: -128px;
+  height: 256px;
+  display: block;
+  animation: run .5s steps(2) infinite;
+
+  
+}
+
+Height Value = margin-top in .graphic !
+
+
+@keyframes KAKAW {
+  50% { transform: translate3d(15px, 18px, 5px); }
+}
+
+@keyframes WUMP {
+  100% { transform: rotateX(1000deg); }
+}
+
+.boy {
+  height: 195px;
+  background: url("http://i50.tinypic.com/2j26dee.jpg");
+  animation: run .5s steps(8) infinite;
+  background-color: ;
+}
+@keyframes FORWARD {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-positon: -960px;
+  }
+}
+
+
+@keyframes run {
+  0% { background-position: 0px; }
+  100% { background-position: -960px; }
+}
+
+.run {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  width: 120px;
+  height: 195px;
+  overflow: hidden;
+}
+
+@keyframes dragon {
+  0% { background-position: 0px -64px; }
+  100% { background-position: -288px -64px; }
+}
